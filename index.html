@@ -28,8 +28,8 @@
   </head>
   <body class="mont-font">
     <!-- NavBar Section -->
-    <header>
-      <nav x-data="{ isOpen: false }" class="relative shadow dark:bg-black">
+    <header class="sticky top-0">
+      <nav x-data="{ isOpen: false }" class="relative shadow dark:bg-black ">
         <div
           class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div class="flex items-center justify-between">
@@ -93,17 +93,12 @@
               <a
                 class="my-2 transition-colors duration-300 transform dark:text-white dark:hover:text-[#64ff00] md:mx-4 md:my-0"
                 href="#film"
-                >Film Production</a
+                >About</a
               >
               <a
                 class="my-2 transition-colors duration-300 transform dark:text-white dark:hover:text-[#64ff00] md:mx-4 md:my-0"
                 href="#audio"
-                >Audio Production</a
-              >
-              <a
-                class="my-2 transition-colors duration-300 transform dark:text-white dark:hover:text-[#64ff00] md:mx-4 md:my-0"
-                href="#about"
-                >About</a
+                >Our Services</a
               >
               <a
                 class="my-2 transition-colors duration-300 transform dark:text-white dark:hover:text-[#64ff00] md:mx-4 md:my-0"
@@ -115,5 +110,18 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hero Section -->
+    <div class="w-full bg-center bg-cover h-[38rem]" style="background-image: url('./images/hero2.jpg');">
+        <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold text-white lg:text-5xl">Welcome to <span class="text-[#64ff00]">Voices and Beats</span></h1>
+                <button class="w-full px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-black rounded-md lg:w-auto hover:text-[#64ff00] focus:outline-none focus:bg-blue-500">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+     
   </body>
 </html>
